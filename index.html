@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset= "UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title> Teaching Survey Form </title>
+  </head>
+  <body>
+    <h1 id="title"> Teaching Survey Form</h1>
+    <p id="description">Thank you for taking time to help me improve the teaching method</p>
+    <form method="post" id="survey-form">
+       <fieldset>
+         <label id="name-label">Enter Your Full Name:<input id="name" type="text" placeholder="Full name"required/></label>
+         <label id="email-label">Enter Your Email:<input id="email" type="email" placeholder="email" required/></label>
+         <label id="number-label">Enter Your Age (optional):<input id="number" type="number" min="10" max="70" placeholder="Age"/></label>
+         <label>Which option best describes your current role?
+           <select id="dropdown">
+             <option value="">(select one)</option>
+             <option value="1">Student</option>
+             <option value="2">Full Time</option>
+             <option value="3">Part Time</option>
+             <option value="4">Prefer not to say</option>
+             <option value="5">Other</option>
+           </select>
+         </label>
+       </fieldset>
+       <fieldset>
+         <label>What is your favorite feature of the teaching?
+           <select id="favorite">
+             <option value="">(select one)</option>
+             <option value="1">Challenges</option>
+             <option value="2">Online Quizes</option>
+             <option value="3">Online Assesments</option>
+             <option value="4">Group meeting</option>
+             <option value="5">Other</option>
+           </select>
+         </label>
+       </fieldset>
+       <fieldset>
+         <legend>Would you recommend course to a friend?</legend>
+         <input type="radio" value="definitely" name="radio" class="radio" checked/><label>Definitely</label>
+         <input type="radio" value="maybe" name="radio" class="radio"/><label>May be</label>
+         <input type="radio" value="notsure" name="radio" class="radio"/><label>Not sure</label>
+       </fieldset>
+       <fieldset>
+         <label for="comments">Any comments or suggestions?<textarea id="comments" rows="3" cols="30" placeholder="Enter your comment here... " class="textarea"></textarea></label>
+       </fieldset>
+       <fieldset>
+         <label>What would you like to see improved? (Check all that apply)</label>
+         <input value="survey-form"type="checkbox" class="checked" checked><label>Recorded lectures</label>
+         <input type="checkbox" value="challenges" class="checked"><label>Challenges</label>
+         <input type="checkbox" value="quizes" class="checked"><label>Quizes</label>
+         <input type="checkbox" value="assesments" class="checked"><label>Assesments</label>
+         <input type="checkbox" value="groupmeeting" class="checked"><label>Group meetings</label>
+       </fieldset>
+       <input id="submit"type="submit" value="Submit" class="submit"/>
+    </form>
+  </body>
+</html>
