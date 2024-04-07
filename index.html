@@ -14,8 +14,8 @@
       </header>
       <form id="survey-form">
         <div class="form-group">
-          <label id="name-label" for="name">Full Name:</label>
-          <input id="name" name="name" type="text" class="form-control" placeholder="Full name"required/>
+          <label id="name-label" for="name" autofocus>Full Name:</label>
+          <input id="name" name="name" type="text" class="form-control" placeholder="Full name" required/>
         </div>
         <div class="form-group">
           <label id="email-label" for="email">Enter Your Email:</label>
@@ -50,7 +50,7 @@
         <div class="form-group">
           <p>Would you recommend course to a friend?</p>
           <label>
-          <input name="user-recommend" value="definitely"  type="radio" class="radio" checked />
+          <input name="user-recommend" value="definitely"  type="radio" class="radio" checked/>
           Definitely 
           </label>
           <label>
@@ -67,7 +67,16 @@
           <textarea id="comments" name="comment" rows="3" cols="60" value="Submit" placeholder="Enter your comment here... " class="textarea"></textarea>
         </div>
         <div class="form-group">
-          <button id="submit" type="submit" class="submit-button"></button>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label><input value="survey-form"type="checkbox" class="checked" checked/>Recorded lectures</label>
+          <label><input type="checkbox" value="challenges" class="checked"/> Challenges</label>
+          <label><input type="checkbox" value="quizes" class="checked"/>Quizes</label>
+          <label><input type="checkbox" value="assesments" class="checked"/>Assesments</label>
+          <label><input type="checkbox" value="groupmeeting" class="checked"/>Group meetings</label>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button"> Submit</button>
         </div>
       </form>
     </div>
